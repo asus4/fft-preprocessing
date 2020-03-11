@@ -60,8 +60,8 @@ public class DFTPreprocessWindow : EditorWindow
     {
         GUILayout.Label("Base Settings", EditorStyles.boldLabel);
         _clip = EditorGUILayout.ObjectField("Audio Clip", _clip, typeof(AudioClip), false);
-        _bandPassFreq = EditorGUILayout.Slider("Band Pass Center Frequency", _bandPassFreq, 50f, 2000f);
-        _bandPassQ = EditorGUILayout.Slider("Band Pass !", _bandPassQ, 0.1f, 100f);
+        _bandPassFreq = EditorGUILayout.Slider("Center Frequency", _bandPassFreq, 50f, 2000f);
+        _bandPassQ = EditorGUILayout.Slider("Q", _bandPassQ, 0.1f, 100f);
 
         if (GUILayout.Button("Start DFT Process"))
         {
